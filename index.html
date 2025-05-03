@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garzón Institute - Preserving the Amazon</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Our custom CSS file -->
+  <link rel="stylesheet" href="rootStyles.css">
+
+  <style>
+    @media (max-width: 768px) {
+  .mission-image {
+    transform: none !important;
+    opacity: 1 !important;
+    transition: none !important;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <div id="main" data-scroll-container>
+
+    <!-- ============ HEADER SECTION START ============ -->
+    <header class="site-header" id="header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="public/img/logo/logoipsum-311.svg" alt="Garzón Institute Logo">
+        </a>
+        
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="#contact" class="nav-btn contact-btn">Contact</a></li>
+            <li><a href="#donate" class="nav-btn donate-btn">Donate</a></li>
+            <li><button class="menu-trigger" id="menuTrigger">MENU</button></li>
+          </ul>
+        </nav>
+        
+        <button class="mobile-menu-trigger" id="mobileMenuTrigger" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+    
+    <div class="overlay-nav" id="overlayNav">
+      <div class="container">
+        <button class="close-overlay" id="closeOverlay" aria-label="Close menu">&times;</button>
+        <nav class="overlay-menu">
+          <ul>
+            <li><a href="#mission">Mission</a></li>
+            <li class="has-dropdown">
+              <button class="dropdown-trigger">Projects <span class="dropdown-icon">+</span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#rikuna">Rikuna Project</a></li>
+                <li><a href="#water-y">Water-Y</a></li>
+                <li><a href="#co-emprende">Co-Emprende</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <button class="dropdown-trigger">News <span class="dropdown-icon">+</span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#news">Latest Updates</a></li>
+                <li><a href="#press">Press</a></li>
+              </ul>
+            </li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- ============ HEADER SECTION END ============ -->
+    
+    <!-- ============ HERO SECTION START ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-parallax">
+        <div class="hero-layer hero-bg" data-speed="0.8"></div>
+        <div class="hero-layer hero-fog" data-speed="0.4"></div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="particles" id="particles"></div>
+      <div class="container">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="800">
+          <h1 class="hero-title">Preserving the Heart of the Amazon</h1>
+
+          <p class="subtitle hero-subtitle">
+            <span class="hero-word"><strong>Science</strong> <span class="hero-arrow">❯</span></span>
+            <span class="hero-word"><strong>Innovation</strong> <span class="hero-arrow">❯</span></span>
+            <span class="hero-word"><strong>Community</strong> <span class="hero-arrow">❯</span></span>
+          </p>          
+          
+          <a href="#mission" class="cta-btn primary-btn hero-btn">Join the Mission</a>
+        </div>
+        <div class="scroll-indicator">
+          <span></span>
+        </div>
+      </div>
+    </section>
+    <!-- ============ HERO SECTION END ============ -->
+    
+    <!-- ============ MISSION SECTION START ============ -->
+    <section class="mission-section" id="mission">
+      <div class="container">
+        <div class="mission-content" data-aos="fade-right">
+          <h2>Empowering Communities Through Science</h2>
+          <p>We bring scientific innovation to rural and Indigenous communities in the Amazon, protecting ecosystems while empowering people through knowledge and technology.</p>
+          <p>Our integrated approach combines cutting-edge research with traditional knowledge to create sustainable solutions that preserve biodiversity and improve quality of life.</p>
+          <a href="#contact" class="cta-btn primary-btn">Get Involved</a>
+        </div>
+        <div class="mission-image" data-aos="fade-left" data-aos-delay="200">
+          <img src="https://loremflickr.com/600/400/amazon,community" alt="Community in the Amazon">
+        </div>
+      </div>
+    </section>
+    <!-- ============ MISSION SECTION END ============ -->
+    
+    <!-- ============ PROJECTS SECTION START ============ -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <h2 data-aos="fade-up">What We Do</h2>
+        
+        <div class="projects-carousel-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper projects-carousel">
+            <div class="swiper-wrapper">
+              <!-- Project Slide 1 -->
+              <div class="swiper-slide">
+                <div class="project-slide" id="rikuna">
+                  <div class="project-card-overlay"></div>
+                  <img src="https://loremflickr.com/800/500/cave,exploration" alt="Amazon cave exploration">
+                  <div class="project-content">
+                    <h3 class="project-title">Rikuna Project</h3>
+                    <p class="project-desc">Fossils and cave exploration in the Amazon uncovering ancient biodiversity and climate history to inform conservation efforts.</p>
+                    <a href="#rikuna-details" class="card-btn">Learn More</a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Project Slide 2 -->
+              <div class="swiper-slide">
+                <div class="project-slide" id="water-y">
+                  <div class="project-card-overlay"></div>
+                  <img src="https://loremflickr.com/800/500/water,technology" alt="Water collection technology">
+                  <div class="project-content">
+                    <h3 class="project-title">Water-Y</h3>
+                    <p class="project-desc">Atmospheric water tech using nanomaterials to provide clean drinking water in remote regions with limited infrastructure.</p>
+                    <a href="#water-y-details" class="card-btn">Learn More</a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Project Slide 3 -->
+              <div class="swiper-slide">
+                <div class="project-slide" id="co-emprende">
+                  <div class="project-card-overlay"></div>
+                  <img src="https://loremflickr.com/800/500/youth,entrepreneur" alt="Youth entrepreneurship program">
+                  <div class="project-content">
+                    <h3 class="project-title">Co-Emprende</h3>
+                    <p class="project-desc">Sustainable entrepreneurship for rural youth in the Amazon region, combining traditional knowledge with modern business practices.</p>
+                    <a href="#co-emprende-details" class="card-btn">Learn More</a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Project Slide 4 -->
+              <div class="swiper-slide">
+                <div class="project-slide">
+                  <div class="project-card-overlay"></div>
+                  <img src="https://loremflickr.com/800/500/technology,biodiversity" alt="Biodiversity monitoring tech">
+                  <div class="project-content">
+                    <h3 class="project-title">BioSentry</h3>
+                    <p class="project-desc">IoT-based biodiversity monitoring systems that track wildlife populations and alert to environmental threats in real-time.</p>
+                    <a href="#biosentry-details" class="card-btn">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-nav">
+            <button class="project-nav-btn project-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="project-nav-btn project-next"><i class="fas fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============ PROJECTS SECTION END ============ -->
+    
+    <!-- ============ QUOTE SECTION START ============ -->
+    <section class="quote-section" id="quote">
+      <div class="quote-overlay"></div>
+      <div class="container quote-container">
+        <blockquote data-aos="zoom-in" data-aos-duration="800">
+          "Science should not stay in the lab. It should live in the forest, walk with the people, and change the world."
+        </blockquote>
+      </div>
+    </section>
+    <!-- ============ QUOTE SECTION END ============ -->
+    
+    <!-- ============ TEAM SECTION START ============ -->
+    <section class="team-section" id="team">
+      <div class="container">
+        <h2 data-aos="fade-up">Our Team</h2>
+        
+        <div class="team-slider-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper team-slider">
+            <div class="swiper-wrapper">
+             
+              <!-- Team Member 1 -->
+              <div class="swiper-slide">
+                <div class="team-slide">
+                  <div class="team-card">
+                    <div class="team-card-inner">
+                      <div class="team-card-front">
+                        <button class="team-flip-trigger" aria-label="View Bio"><i class="fas fa-plus"></i></button>
+                        <div class="team-avatar">
+                          <img src="https://loremflickr.com/300/300/woman,professional" alt="Doménica Garzón">
+                        </div>
+                        <div class="team-info">
+                          <h3 class="team-name">Doménica Garzón</h3>
+                          <p class="team-role">CEO & Theoretical Physicist</p>
+                          <p class="team-bio">Leading interdisciplinary research at the intersection of physics and ecology.</p>
+                          <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team-card-back">
+                        <h3>About Doménica</h3>
+                        <p>Dr. Garzón holds a PhD in Theoretical Physics from MIT and has dedicated her career to applying complex systems theory to ecological problems. She founded the Garzón Institute in 2018 after witnessing the impact of climate change on her childhood home in the Amazon.</p>
+                        <p>Her work has been recognized with numerous awards, including the National Science Foundation's CAREER Award and the MacArthur Fellowship.</p>
+                        <button class="card-btn" data-flip="back">Back</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Team Member 2 -->
+              <div class="swiper-slide">
+                <div class="team-slide">
+                  <div class="team-card">
+                    <div class="team-card-inner">
+                      <div class="team-card-front">
+                        <button class="team-flip-trigger" aria-label="View Bio"><i class="fas fa-plus"></i></button>
+                        <div class="team-avatar">
+                          <img src="https://loremflickr.com/300/300/man,professional" alt="Carlos Mendez">
+                        </div>
+                        <div class="team-info">
+                          <h3 class="team-name">Carlos Mendez</h3>
+                          <p class="team-role">Director of Field Operations</p>
+                          <p class="team-bio">20 years experience working with Indigenous communities in the Amazon basin.</p>
+                          <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team-card-back">
+                        <h3>About Carlos</h3>
+                        <p>Born and raised in the Amazon region, Carlos has spent two decades building relationships with Indigenous communities and facilitating knowledge exchange between traditional ecological practices and modern scientific research.</p>
+                        <p>He holds a Master's in Anthropology and is fluent in five Indigenous languages of the Amazon Basin.</p>
+                        <button class="card-btn" data-flip="back">Back</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Team Member 3 -->
+              <div class="swiper-slide">
+                <div class="team-slide">
+                  <div class="team-card">
+                    <div class="team-card-inner">
+                      <div class="team-card-front">
+                        <button class="team-flip-trigger" aria-label="View Bio"><i class="fas fa-plus"></i></button>
+                        <div class="team-avatar">
+                          <img src="https://loremflickr.com/300/300/woman,scientist" alt="Luisa Fernandez">
+                        </div>
+                        <div class="team-info">
+                          <h3 class="team-name">Luisa Fernandez</h3>
+                          <p class="team-role">Lead Materials Scientist</p>
+                          <p class="team-bio">Developing sustainable nanomaterials for environmental applications.</p>
+                          <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team-card-back">
+                        <h3>About Luisa</h3>
+                        <p>Dr. Fernandez is a pioneer in biomimetic nanomaterials, taking inspiration from natural structures found in the Amazon rainforest. Her innovative water filtration technologies are now deployed in over 100 communities worldwide.</p>
+                        <p>She previously led R&D at the Water Innovation Lab before joining the Garzón Institute in 2019.</p>
+                        <button class="card-btn" data-flip="back">Back</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Team Member 4 -->
+              <div class="swiper-slide">
+                <div class="team-slide">
+                  <div class="team-card">
+                    <div class="team-card-inner">
+                      <div class="team-card-front">
+                        <button class="team-flip-trigger" aria-label="View Bio"><i class="fas fa-plus"></i></button>
+                        <div class="team-avatar">
+                          <img src="https://loremflickr.com/300/300/man,educator" alt="Rajiv Patel">
+                        </div>
+                        <div class="team-info">
+                          <h3 class="team-name">Rajiv Patel</h3>
+                          <p class="team-role">Community Programs Director</p>
+                          <p class="team-bio">Designing educational programs that bridge traditional knowledge and modern science.</p>
+                          <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team-card-back">
+                        <h3>About Rajiv</h3>
+                        <p>With a background in both education and environmental science, Rajiv creates innovative learning experiences that honor Indigenous knowledge while introducing scientific methodologies that communities can adapt and control.</p>
+                        <p>His Co-Emprende youth program has launched over 50 sustainable businesses in the Amazon region.</p>
+                        <button class="card-btn" data-flip="back">Back</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Team Member 5 -->
+              <div class="swiper-slide">
+                <div class="team-slide">
+                  <div class="team-card">
+                    <div class="team-card-inner">
+                      <div class="team-card-front">
+                        <button class="team-flip-trigger" aria-label="View Bio"><i class="fas fa-plus"></i></button>
+                        <div class="team-avatar">
+                          <img src="https://loremflickr.com/300/300/man,educator" alt="Rajiv Patel">
+                        </div>
+                        <div class="team-info">
+                          <h3 class="team-name">Rajiv Patel</h3>
+                          <p class="team-role">Community Programs Director</p>
+                          <p class="team-bio">Designing educational programs that bridge traditional knowledge and modern science.</p>
+                          <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team-card-back">
+                        <h3>About Rajiv</h3>
+                        <p>With a background in both education and environmental science, Rajiv creates innovative learning experiences that honor Indigenous knowledge while introducing scientific methodologies that communities can adapt and control.</p>
+                        <p>His Co-Emprende youth program has launched over 50 sustainable businesses in the Amazon region.</p>
+                        <button class="card-btn" data-flip="back">Back</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Team Member 6 -->
+              <div class="swiper-slide">
+                <div class="team-slide">
+                  <div class="team-card">
+                    <div class="team-card-inner">
+                      <div class="team-card-front">
+                        <button class="team-flip-trigger" aria-label="View Bio"><i class="fas fa-plus"></i></button>
+                        <div class="team-avatar">
+                          <img src="https://loremflickr.com/300/300/man,educator" alt="Rajiv Patel">
+                        </div>
+                        <div class="team-info">
+                          <h3 class="team-name">Rajiv Patel</h3>
+                          <p class="team-role">Community Programs Director</p>
+                          <p class="team-bio">Designing educational programs that bridge traditional knowledge and modern science.</p>
+                          <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team-card-back">
+                        <h3>About Rajiv</h3>
+                        <p>With a background in both education and environmental science, Rajiv creates innovative learning experiences that honor Indigenous knowledge while introducing scientific methodologies that communities can adapt and control.</p>
+                        <p>His Co-Emprende youth program has launched over 50 sustainable businesses in the Amazon region.</p>
+                        <button class="card-btn" data-flip="back">Back</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+          <div class="team-nav">
+            <button class="team-nav-btn team-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="team-nav-btn team-next"><i class="fas fa-chevron-right"></i></button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- ============ TEAM SECTION END ============ -->
+    
+    <!-- ============ GALLERY SECTION START ============ -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <h2 data-aos="fade-up">Life in the Amazon</h2>
+        
+        <div class="gallery-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="gallery-scroller" id="galleryScroller">
+
+            <!-- Gallery Item 1 -->
+            <div class="gallery-item" data-index="0">
+              <img src="https://loremflickr.com/800/600/rainforest,canopy" alt="Amazon rainforest canopy" data-caption="Canopy research station">
+              <div class="gallery-caption">
+                <h3 class="gallery-title">Canopy Research Station</h3>
+                <p class="gallery-description">Our 45-meter high research platform provides access to one of the most biodiverse ecosystems on the planet.</p>
+              </div>
+            </div>
+            
+            <!-- Gallery Item 2 -->
+            <div class="gallery-item" data-index="1">
+              <img src="https://loremflickr.com/800/600/indigenous,community" alt="Indigenous community" data-caption="Knowledge exchange workshop">
+              <div class="gallery-caption">
+                <h3 class="gallery-title">Knowledge Exchange</h3>
+                <p class="gallery-description">Local community elders share traditional ecological knowledge with our scientific team.</p>
+              </div>
+            </div>
+            
+            <!-- Gallery Item 3 -->
+            <div class="gallery-item" data-index="2">
+              <img src="https://loremflickr.com/800/600/amazon,river" alt="River system" data-caption="River monitoring">
+              <div class="gallery-caption">
+                <h3 class="gallery-title">River Monitoring</h3>
+                <p class="gallery-description">Real-time water quality sensors track ecosystem health across the river basin.</p>
+              </div>
+            </div>
+            
+            <!-- Gallery Item 4 -->
+            <div class="gallery-item" data-index="3">
+              <img src="https://loremflickr.com/800/600/water,collection" alt="Water collection" data-caption="Water-Y in action">
+              <div class="gallery-caption">
+                <h3 class="gallery-title">Water-Y in Action</h3>
+                <p class="gallery-description">Our atmospheric water generators provide clean drinking water in remote communities.</p>
+              </div>
+            </div>
+            
+            <!-- Gallery Item 5 -->
+            <div class="gallery-item" data-index="4">
+              <img src="https://loremflickr.com/800/600/workshop,youth" alt="Youth program" data-caption="Co-Emprende workshop">
+              <div class="gallery-caption">
+                <h3 class="gallery-title">Co-Emprende Workshop</h3>
+                <p class="gallery-description">Young entrepreneurs develop sustainable business plans based on local resources.</p>
+              </div>
+            </div>
+            
+            <!-- Gallery Item 6 -->
+            <div class="gallery-item" data-index="5">
+              <img src="https://loremflickr.com/800/600/amazon,biodiversity" alt="Biodiversity" data-caption="Amazonian biodiversity">
+              <div class="gallery-caption">
+                <h3 class="gallery-title">Amazonian Biodiversity</h3>
+                <p class="gallery-description">Our research documents and preserves the incredible diversity of Amazonian species.</p>
+              </div>
+            </div>
+
+            <!-- Gallery Item 7 -->
+            <div class="gallery-item" data-index="6">
+              <img src="https://loremflickr.com/800/600/amazon,biodiversity" alt="Biodiversity" data-caption="Amazonian biodiversity">
+              <div class="gallery-caption">
+                <h3 class="gallery-title">Amazonian Biodiversity - 7</h3>
+                <p class="gallery-description">Our research documents and preserves the incredible diversity of Amazonian species.</p>
+              </div>
+            </div>
+
+            <!-- Gallery Item 8 -->
+            <div class="gallery-item" data-index="7">
+              <img src="https://loremflickr.com/800/600/amazon,biodiversity" alt="Biodiversity" data-caption="Amazonian biodiversity">
+              <div class="gallery-caption">
+                <h3 class="gallery-title">Amazonian Biodiversity - 8</h3>
+                <p class="gallery-description">Our research documents and preserves the incredible diversity of Amazonian species.</p>
+              </div>
+            </div>
+
+          </div>
+          
+          <div class="gallery-nav">
+            <button class="gallery-dot active" data-index="0"></button>
+            <button class="gallery-dot" data-index="1"></button>
+            <button class="gallery-dot" data-index="2"></button>
+            <button class="gallery-dot" data-index="3"></button>
+            <button class="gallery-dot" data-index="4"></button>
+            <button class="gallery-dot" data-index="5"></button>
+          </div>
+          
+          <div class="gallery-progress">
+            <div class="gallery-progress-bar" id="galleryProgressBar"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Gallery Lightbox -->
+    <div class="gallery-lightbox" id="galleryLightbox">
+      <button class="lightbox-close" id="lightboxClose">&times;</button>
+      <div class="lightbox-content">
+        <img class="lightbox-image" id="lightboxImage" src="" alt="">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+      </div>
+      <div class="lightbox-nav">
+        <button class="lightbox-nav-btn lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-nav-btn lightbox-next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+    <!-- ============ GALLERY SECTION END ============ -->
+    
+    <!-- ============ NEWS SECTION START ============ -->
+    <section class="news-section" id="news">
+      <div class="container">
+        <h2 data-aos="fade-up">Latest Updates</h2>
+        
+        <div class="news-container">
+          <div class="news-masonry">
+            <!-- Featured News -->
+            <div class="news-item featured" data-reveal-index="0">
+              <div class="news-item-image">
+                <img src="https://loremflickr.com/600/400/research,science" alt="Research Breakthrough">
+              </div>
+              <div class="news-item-content">
+                <div class="news-date"><i class="far fa-calendar-alt"></i> May 15, 2025</div>
+                <h3 class="news-title">Breakthrough in Atmospheric Water Generation Yields 300% Efficiency Increase</h3>
+                <div class="news-tags">
+                  <span class="news-tag">Research</span>
+                  <span class="news-tag">Water-Y</span>
+                  <span class="news-tag">Innovation</span>
+                </div>
+                <p class="news-excerpt">Our team has developed a new hydrophilic nanomaterial inspired by the structure of bromeliad leaves that dramatically increases water collection efficiency even in low humidity conditions.</p>
+                <a href="#news-details" class="card-btn">Read More</a>
+              </div>
+            </div>
+            
+            <!-- Medium News 1 -->
+            <div class="news-item medium" data-reveal-index="1">
+              <div class="news-item-image">
+                <img src="https://loremflickr.com/600/400/partnership,unesco" alt="New Partnership">
+              </div>
+              <div class="news-item-content">
+                <div class="news-date"><i class="far fa-calendar-alt"></i> May 10, 2025</div>
+                <h3 class="news-title">Global Partnership Announced with UNESCO for Biodiversity Preservation</h3>
+                <div class="news-tags">
+                  <span class="news-tag">Partnership</span>
+                  <span class="news-tag">Conservation</span>
+                </div>
+                <p class="news-excerpt">The Garzón Institute is proud to announce a new five-year partnership with UNESCO to expand our biodiversity monitoring network across three Amazon countries.</p>
+                <a href="#news-details" class="card-btn">Read More</a>
+              </div>
+            </div>
+            
+            <!-- Small News 1 -->
+            <div class="news-item small" data-reveal-index="2">
+              <div class="news-item-content">
+                <div class="news-date"><i class="far fa-calendar-alt"></i> May 5, 2025</div>
+                <h3 class="news-title">Co-Emprende Program Launches in 10 New Communities</h3>
+                <div class="news-tags">
+                  <span class="news-tag">Community</span>
+                  <span class="news-tag">Education</span>
+                </div>
+                <p class="news-excerpt">Our youth entrepreneurship program expands to reach 200 new participants across the Amazon basin.</p>
+                <a href="#news-details" class="card-btn">Read More</a>
+              </div>
+            </div>
+            
+            <!-- Small News 2 -->
+            <div class="news-item small" data-reveal-index="3">
+              <div class="news-item-content">
+                <div class="news-date"><i class="far fa-calendar-alt"></i> April 28, 2025</div>
+                <h3 class="news-title">Annual Conference: Integrating Science and Traditional Knowledge</h3>
+                <div class="news-tags">
+                  <span class="news-tag">Events</span>
+                  <span class="news-tag">Research</span>
+                </div>
+                <p class="news-excerpt">Join us for our annual symposium featuring speakers from Indigenous communities and research institutions worldwide.</p>
+                <a href="#news-details" class="card-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============ NEWS SECTION END ============ -->
+    
+    <!-- ============ CTA SECTION START ============ -->
+    <section class="cta-section" id="cta">
+      <div class="cta-bg"></div>
+      <div class="cta-shapes">
+        <div class="cta-shape"></div>
+        <div class="cta-shape"></div>
+        <div class="cta-shape"></div>
+      </div>
+      <div class="container z-index-1">
+        <h2 data-aos="fade-up">Help Us Make an Impact</h2>
+        <p data-aos="fade-up" data-aos-delay="100">Join our mission to preserve the Amazon's biodiversity and empower its communities through innovative scientific solutions and sustainable development.</p>
+        <div class="cta-buttons">
+          <a href="#donate" class="cta-btn primary-btn" data-aos="fade-up" data-aos-delay="200">Donate Now</a>
+          <a href="#partner" class="cta-btn secondary-btn" data-aos="fade-up" data-aos-delay="300">Partner With Us</a>
+        </div>
+      </div>
+    </section>
+    <!-- ============ CTA SECTION END ============ -->
+    
+    <!-- ============ FOOTER SECTION START ============ -->
+    <footer class="site-footer" id="contact">
+      <div class="footer-bg"></div>
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-col footer-about">
+            <img src="public\img\logo\logo1.svg" alt="Garzón Institute Logo" class="footer-logo">
+            <address>
+              <p><i class="fas fa-map-marker-alt"></i> Av. Amazonas N45-12<br>Quito, Ecuador</p>
+              <p><i class="fas fa-envelope"></i> <a href="mailto:info@garzoninstitute.org">info@garzoninstitute.org</a></p>
+              <p><i class="fas fa-phone"></i> <a href="tel:+59322556789">+593 2 255 6789</a></p>
+            </address>
+          </div>
+          
+          <div class="footer-col footer-nav">
+            <h3>Navigation</h3>
+            <nav>
+              <ul>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#news">News</a></li>
+              </ul>
+            </nav>
+          </div>
+          
+          <div class="footer-col footer-newsletter">
+            <h3>Stay Connected</h3>
+            <p>Subscribe to our newsletter for updates on our projects and discoveries.</p>
+            <form class="newsletter-form">
+              <input type="email" class="newsletter-input" placeholder="Your email address" required>
+              <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+            </form>
+            <div class="language-toggle">
+              <button class="lang-btn active" data-lang="en">EN</button>
+              <button class="lang-btn" data-lang="es">ES</button>
+              <button class="lang-btn" data-lang="pt">PT</button>
+            </div>
+          </div>
+          
+          <div class="footer-col footer-social">
+            <h3>Follow Us</h3>
+            <p>Connect with us on social media to see our work in action.</p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Garzón Institute. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- ============ FOOTER SECTION END ============ -->
+    
+</div>
+
+<!-- External Scripts -->
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<!-- AOS Animation Library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- GSAP Animation Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<!-- Locomotive Scroll -->
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+
+<!-- Our custom JavaScript file -->
+<script src="landingpage.js"></script>
+
+</body>
+</html>
